@@ -1,0 +1,60 @@
+2 ?- [family_releationships].    
+true.
+
+3 ?- parent(X,bart).
+X = homer ;
+X = marge.
+
+4 ?- parent(clancy,patty).
+true ;
+false.
+
+5 ?- married(X,mona).
+X = abraham.
+
+6 ?- male(X).
+X = abraham ;
+X = herb ;
+X = clancy ;
+X = homer ;
+X = bart.
+
+7 ?- male(herb).
+true.
+
+8 ?- daughter(marge,X).
+X = lisa ;
+X = maggie.
+
+9 ?- mother(lisa,X).
+false.
+
+10 ?- mother(X,lisa). 
+X = marge.
+
+
+15 ?- grandfather(X,bart).     
+X = abraham ;
+X = clancy ;
+false.
+
+21 ?- brother(bart,X).
+X = lisa ;
+X = maggie ;
+X = lisa ;
+X = maggie.
+
+22 ?- sister(ling,X).
+false.
+
+23 ?- uncle(herb,bart).
+true .
+
+24 ?- cousin(ling,X).
+X = bart ;
+X = bart ;
+X = lisa ;
+X = lisa ;
+X = maggie ;
+X = maggie ;
+false.
